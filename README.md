@@ -2,12 +2,18 @@
 
 
 ## Description 
-This is for the backend of an e-commerce application 
+This is for the backend of an e-commerce application
+
+Video Walkthrough Link:<br>
+https://drive.google.com/file/d/1fWlk4k7y-y0TlgYXdQ61wMjCMq1vy_zQ/view 
 
 ## Screenshots
 
 This is the command line after running node server.js
 ![alt](./assets/images/commandline.png)
+
+This is a screenshot from insomnia when I demo get product by ID.
+![alt](./assets/images/insomnida-demo.png)
 
 ## Table of contents
 - [Go to Installation](#installation) 
