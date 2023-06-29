@@ -16,17 +16,29 @@ Product.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    product_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'product',
-        key: 'id',
+    product_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    price: {
+      type: DataTypes.DECIMAL,
+      allowNull: false,
+      validate: {
+        isDecimal: true,
       },
     },
-    tag_id: {
+    stock: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        isNumeric: true,
+      },
+      defaultValue: 10
+    },
+    category_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'tag',
+        model: 'category',
         key: 'id',
       },
     },
@@ -40,4 +52,6 @@ Product.init(
   }
 );
 
-module.exports = ProductTag;
+module.exports = Product;
+
+
